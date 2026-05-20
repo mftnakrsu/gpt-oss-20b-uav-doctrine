@@ -1,0 +1,12 @@
+{
+  "source_id": "us_jp_5_0",
+  "fetched_at": "2026-05-20T19:04:57.862392+00:00",
+  "url_attempted": "https://web.archive.org/web/20220715183645/https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp5_0.pdf",
+  "final_url": "https://web.archive.org/web/20220715183645/https://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/jp5_0.pdf",
+  "http_status": 200,
+  "filename": "jp5_0.pdf",
+  "bytes": 2435815,
+  "sha256": "57e4b0728b7c73d63656f05d86a4041b992c371ec3db958e37bfe937cd2ca331",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

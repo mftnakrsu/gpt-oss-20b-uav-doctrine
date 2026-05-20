@@ -1,0 +1,12 @@
+{
+  "source_id": "us_dodd_3000_09",
+  "fetched_at": "2026-05-20T19:05:06.611238+00:00",
+  "url_attempted": "https://web.archive.org/web/20260515013449/https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/300009p.pdf",
+  "final_url": "https://web.archive.org/web/20260515013449/https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/300009p.pdf",
+  "http_status": 200,
+  "filename": "300009p.pdf",
+  "bytes": 327561,
+  "sha256": "a31f7ed25a20a912d728ab24fd643709f07200ba807c01be68061b594ebc55f2",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

@@ -1,0 +1,12 @@
+{
+  "source_id": "us_jp_3_60",
+  "fetched_at": "2026-05-20T20:01:19.731353+00:00",
+  "url_attempted": "https://www.justsecurity.org/wp-content/uploads/2015/06/Joint_Chiefs-Joint_Targeting_20130131.pdf",
+  "final_url": "https://www.justsecurity.org/wp-content/uploads/2015/06/Joint_Chiefs-Joint_Targeting_20130131.pdf",
+  "http_status": 200,
+  "filename": "Joint_Chiefs-Joint_Targeting_20130131.pdf",
+  "bytes": 876964,
+  "sha256": "7bd79a655a0c0654ad5296c8373778253881ecd0aea753cee7907ae1b73684ef",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

@@ -1,0 +1,12 @@
+{
+  "source_id": "us_atp_3_01_81",
+  "fetched_at": "2026-05-20T18:41:30.965201+00:00",
+  "url_attempted": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN43877-ATP_3-01.81-000-WEB-1.pdf",
+  "final_url": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN43877-ATP_3-01.81-000-WEB-1.pdf",
+  "http_status": 200,
+  "filename": "ARN43877-ATP_3-01.81-000-WEB-1.pdf",
+  "bytes": 26322968,
+  "sha256": "3f58223d4a871677209d53fb0b40445557865fdfc83f2d3d306889eec80890f7",
+  "license": "us_distribution_a",
+  "used_mirror": false
+}

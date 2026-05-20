@@ -1,0 +1,12 @@
+{
+  "source_id": "us_afdp_3_52",
+  "fetched_at": "2026-05-20T19:05:04.476774+00:00",
+  "url_attempted": "https://web.archive.org/web/2024/https://www.doctrine.af.mil/Portals/61/documents/AFDP_3-52/3-52-AFDP-AIRSPACE-CONTROL.pdf",
+  "final_url": "https://web.archive.org/web/20241127231517/https://www.doctrine.af.mil/Portals/61/documents/AFDP_3-52/3-52-AFDP-AIRSPACE-CONTROL.pdf",
+  "http_status": 200,
+  "filename": "3-52-AFDP-AIRSPACE-CONTROL.pdf",
+  "bytes": 1643052,
+  "sha256": "b5059218e7336f459a45a4a59e82333ab852711a82e623372ea8b88b42f63141",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

@@ -1,0 +1,12 @@
+{
+  "source_id": "us_jp_3_13_1",
+  "fetched_at": "2026-05-20T20:01:20.156989+00:00",
+  "url_attempted": "https://www.usna.edu/Training/_files/documents/References/3C%20MQS%20References/2015-2016%203C%20MQS%20References/Joint%20Publication%203-13.1_Electronic%20Warfare_FEB2012.pdf",
+  "final_url": "https://www.usna.edu/Training/_files/documents/References/3C%20MQS%20References/2015-2016%203C%20MQS%20References/Joint%20Publication%203-13.1_Electronic%20Warfare_FEB2012.pdf",
+  "http_status": 200,
+  "filename": "Joint%20Publication%203-13.1_Electronic%20Warfare_FEB2012.pdf",
+  "bytes": 1229998,
+  "sha256": "459061c5bb6f4d535ae26fc861f6aa1b16b5593f15d6b40b176d2f8bc15293e7",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

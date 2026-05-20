@@ -1,0 +1,12 @@
+{
+  "source_id": "us_afdoctrine_smartbook",
+  "fetched_at": "2026-05-20T19:05:07.538609+00:00",
+  "url_attempted": "https://web.archive.org/web/2024/https://www.doctrine.af.mil/Portals/61/documents/SmartBook/AFDoctrineSmartBook.pdf",
+  "final_url": "https://web.archive.org/web/20241130022614/https://www.doctrine.af.mil/Portals/61/documents/SmartBook/AFDoctrineSmartBook.pdf",
+  "http_status": 200,
+  "filename": "AFDoctrineSmartBook.pdf",
+  "bytes": 4003249,
+  "sha256": "39f6d8927aebbabbf4e7186f028ccc812cfee5a7dcbb99bc0d5be2652a6a64e7",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

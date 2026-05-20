@@ -1,0 +1,12 @@
+{
+  "source_id": "faa_jo_7110_65",
+  "fetched_at": "2026-05-20T20:01:21.387515+00:00",
+  "url_attempted": "https://www.faa.gov/documentLibrary/media/Order/7110.65BB_Bsc_w_Chg_1_and_2_dtd_1-22-26_Final.pdf",
+  "final_url": "https://www.faa.gov/documentLibrary/media/Order/7110.65BB_Bsc_w_Chg_1_and_2_dtd_1-22-26_Final.pdf",
+  "http_status": 200,
+  "filename": "7110.65BB_Bsc_w_Chg_1_and_2_dtd_1-22-26_Final.pdf",
+  "bytes": 9660913,
+  "sha256": "2c2ea08ee7378a154daf04b48555c2c9bff07192c57c6930aac69339e24f94de",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

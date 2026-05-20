@@ -1,0 +1,12 @@
+{
+  "source_id": "nato_sto_en_sci_271_03",
+  "fetched_at": "2026-05-20T19:04:54.724514+00:00",
+  "url_attempted": "https://publications.sto.nato.int/publications/STO%20Educational%20Notes/STO-EN-SCI-271/EN-SCI-271-03.pdf",
+  "final_url": "https://publications.sto.nato.int/publications/STO%20Educational%20Notes/STO-EN-SCI-271/EN-SCI-271-03.pdf",
+  "http_status": 200,
+  "filename": "EN-SCI-271-03.pdf",
+  "bytes": 624549,
+  "sha256": "456ce93d42451ff9cda9c2ca60ec93a308f967b92805cd476c27e442e1bbc011",
+  "license": "nato_public",
+  "used_mirror": false
+}

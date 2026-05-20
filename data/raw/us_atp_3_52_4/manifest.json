@@ -1,0 +1,12 @@
+{
+  "source_id": "us_atp_3_52_4",
+  "fetched_at": "2026-05-20T20:09:56.618737+00:00",
+  "url_attempted": "https://info.publicintelligence.net/MTTP-AirspaceControl.pdf",
+  "final_url": "https://info.publicintelligence.net/MTTP-AirspaceControl.pdf",
+  "http_status": 200,
+  "filename": "MTTP-AirspaceControl.pdf",
+  "bytes": 2399186,
+  "sha256": "9f2e86b98024890577647980b47c522e88ca20f64c12342357df0bf1ce191d85",
+  "license": "us_distribution_a",
+  "used_mirror": false
+}

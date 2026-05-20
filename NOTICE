@@ -1,0 +1,142 @@
+# NOTICE — Redistributed Doctrine Material
+
+This repository redistributes 30 publicly-released doctrine and reference PDFs
+from US, UK, NATO, ICAO, EASA, and FAA sources. All sources are explicitly
+permitted for public redistribution under their respective licenses, as
+catalogued in `src/ingest/sources.py`. Every redistributed PDF carries a
+`manifest.json` alongside it in `data/raw/<source_id>/` documenting:
+
+- The publisher
+- The license under which it is redistributed
+- The fetched-at timestamp (UTC)
+- The URL attempted, the final URL after redirects, and the HTTP status
+- The SHA-256 hash of the bytes on disk
+- Whether a mirror was used in lieu of the primary URL
+
+This is intended for academic / research use in fine-tuning a small language
+model on public UAV/UAS doctrine. The repository makes no representation that
+the redistributed PDFs are the most current editions; documented edition gaps
+are recorded in the per-source `notes` field of `sources.py`.
+
+---
+
+## License summary across the corpus
+
+| Count | License | Terms |
+|-------|--------------------------|------|
+| 19 | US Public Domain | Works of the US federal government, not protected by US copyright per 17 U.S.C. § 105 |
+| 4 | NATO Public Release | NATO Unclassified, releasable to public per NSO terms |
+| 2 | US Distribution Statement A | "Approved for public release; distribution is unlimited" |
+| 2 | UK Open Government Licence v3.0 | https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/ |
+| 2 | EASA Public | Free public use with attribution to the European Union Aviation Safety Agency |
+| 1 | ICAO Public | International Civil Aviation Organization public release |
+
+---
+
+## Attributions
+
+### UK Open Government Licence v3.0
+The following are © Crown Copyright, UK Ministry of Defence (Development,
+Concepts and Doctrine Centre), and are reproduced under the terms of the UK
+Open Government Licence v3.0:
+
+- **JDP 0-30, UK Air Power (3rd Edition, November 2022)** — `data/raw/uk_jdp_0_30/`
+- **JDP 0-30.2, Unmanned Aircraft Systems (Change 1, archived)** — `data/raw/uk_jdp_0_30_2/`
+
+### NATO Standardization Office / NATO STO
+
+The following are reproduced as NATO Unclassified, Releasable to the Public:
+
+- **AJP-3, Allied Joint Doctrine for the Conduct of Operations (Edition D, Version 1)** — `data/raw/nato_ajp_3/`
+- **AJP-3.3, Allied Joint Doctrine for Air and Space Operations (Edition C, Version 1)** — `data/raw/nato_ajp_3_3/`
+- **AJP-3.3.5, Allied Joint Doctrine for Airspace Control (Edition C, Version 1, March 2024)** — `data/raw/nato_ajp_3_3_5/`
+- **STO Educational Note STO-EN-SCI-271/03, UAS Control System (UCS) Standardization** — `data/raw/nato_sto_en_sci_271_03/`
+
+### European Union Aviation Safety Agency (EASA)
+Reproduced with attribution to the European Union Aviation Safety Agency under
+the EASA public-use terms:
+
+- **EASA Easy Access Rules for Unmanned Aircraft Systems (Reg 2019/947 + 2019/945, July 2024 revision)** — `data/raw/easa_uas_ear/`
+- **EASA SAIL III Means of Compliance — OSO#06 (C2 Link Characteristics)** — `data/raw/easa_oso6_c2_link/`
+
+### International Civil Aviation Organization (ICAO)
+
+- **ICAO RPAS Concept of Operations for International IFR Operations** — `data/raw/icao_rpas_conops/`
+
+### US Government Works (Public Domain per 17 U.S.C. § 105)
+
+Joint Staff publications:
+- JP 2-0, Joint Intelligence
+- JP 3-0, Joint Operations (2017 edition — current 2022 retitled edition has no public mirror)
+- JP 3-01, Countering Air and Missile Threats
+- JP 3-09, Joint Fires
+- JP 3-13.1, Electronic Warfare (Feb 2012, latest public)
+- JP 3-30, Joint Air Operations
+- JP 3-52, Joint Airspace Control
+- JP 3-60, Joint Targeting (2013 edition — current 2018 edition has no public mirror)
+- JP 3-85, Joint Electromagnetic Spectrum Operations
+- JP 5-0, Joint Planning
+- DoD Dictionary of Military and Associated Terms
+
+US Army publications:
+- ADP 3-0, Operations (March 2025)
+- ADP 6-0, Mission Command
+- ATP 3-01.81, Counter-Unmanned Aircraft System (C-UAS) Operations (May 2025)
+
+US Air Force publications:
+- AFDP 3-0, Operations (January 2025)
+- AFDP 3-52, Airspace Control
+- Air Force Doctrine Smart Book
+
+US DoD policy:
+- DoDD 3000.09, Autonomy in Weapon Systems (January 2023)
+
+US Federal Aviation Administration:
+- FAA Order JO 7110.65 BB w/Chg 1 and 2 (January 2026)
+- FAA Notice N JO 7110.724, UAS Lost Link Procedures
+
+### US Distribution Statement A
+Released by the US Department of Defense with the statement "Approved for
+public release; distribution is unlimited":
+
+- **ATP 3-52.4 / MCRP 3-20F.10 / NTTP 6-02.9 / AFTTP 3-2.8, Multi-Service TTP for Air Control Communication**
+- **ATP 3-52.4 currently fetched copy was sourced via the publicintelligence.net mirror; the underlying document carries Distribution Statement A**
+
+---
+
+## Mirror infrastructure used
+
+For transparency and to aid future researchers troubleshooting similar
+ingest pipelines from non-US IPs, the following mirror infrastructure proved
+accessible from a Turkish IP without proxy:
+
+- `gov.uk` (UK MOD via DCDC) — JDP series + UK MOD's mirrored NATO AJPs
+- `armypubs.army.mil` — US Army ADP/ATP direct PDFs
+- `web.archive.org` (Internet Archive — Wayback Machine) — verified snapshots of JCS, AF, OSD, and ICAO PDFs
+- `publications.sto.nato.int` — NATO Science and Technology Organization public publications
+- `easa.europa.eu` — EU regulator direct downloads
+- `faa.gov/documentLibrary` — FAA direct stable PDFs (the dynamic `index.cfm` redirect endpoint returns HTML wrappers and is unsuitable for scripted ingest)
+- `icao.int` (via Wayback) — ICAO public-release PDFs
+- `crows.org` (Association of Old Crows, EW industry nonprofit) — JP 3-85 mirror
+- `justsecurity.org` (NYU Law academic journal) — JP 3-60 2013 edition mirror
+- `usna.edu` (US Naval Academy training reference) — JP 3-13.1 mirror
+- `info.publicintelligence.net` — `MTTP-AirspaceControl.pdf` mirror (Distribution A content)
+- `safety.marines.mil` (via Wayback) — JP 3-0 2017 edition mirror
+
+---
+
+## Documented gaps
+
+The following docs identified in `sources.py` could not be retrieved from
+non-US IPs and are not present in `data/raw/`:
+
+- **ATP 3-04.64 / MCRP 3-42.1A / NTTP 3-55.14 / AFTTP 3-2.64, Multi-Service TTP for Tactical Employment of UAS (2015)** — armypubs catalog `PUB_ID=104824` confirms RESCINDED / INACTIVE status; no public mirror exists. The 2015 edition is available only as a $7.95 commercial reprint from `myarmypublications.com`.
+
+---
+
+## Inquiries
+
+Questions about the licensing of any specific redistributed PDF should be
+directed to the original publisher, not this repository. Per-source
+provenance is recorded in `src/ingest/sources.py` and in each
+`data/raw/<source_id>/manifest.json`.

@@ -1,0 +1,12 @@
+{
+  "source_id": "nato_ajp_3_3",
+  "fetched_at": "2026-05-20T18:38:36.304938+00:00",
+  "url_attempted": "https://assets.publishing.service.gov.uk/media/698ef9fb7da91680ad7f4389/AJP_3_3_EdC_V1.pdf",
+  "final_url": "https://assets.publishing.service.gov.uk/media/698ef9fb7da91680ad7f4389/AJP_3_3_EdC_V1.pdf",
+  "http_status": 200,
+  "filename": "AJP_3_3_EdC_V1.pdf",
+  "bytes": 2326908,
+  "sha256": "2a1c63ee743c23c2c199e20f2674b01193424ac97f45f91aadc8682a88d2fd30",
+  "license": "nato_public",
+  "used_mirror": false
+}

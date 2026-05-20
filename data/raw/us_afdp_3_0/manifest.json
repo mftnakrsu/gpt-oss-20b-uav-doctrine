@@ -1,0 +1,12 @@
+{
+  "source_id": "us_afdp_3_0",
+  "fetched_at": "2026-05-20T20:09:55.670686+00:00",
+  "url_attempted": "https://web.archive.org/web/2025/https://www.doctrine.af.mil/Portals/61/documents/AFDP_3-0/AFDP3-0Operations.pdf",
+  "final_url": "https://web.archive.org/web/20251210072029/https://www.doctrine.af.mil/Portals/61/documents/AFDP_3-0/AFDP3-0Operations.pdf",
+  "http_status": 200,
+  "filename": "AFDP3-0Operations.pdf",
+  "bytes": 1578256,
+  "sha256": "9540610f74ff4820e2d59fe45bd708605ad46d3322481fbd6767bc5d061ab412",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

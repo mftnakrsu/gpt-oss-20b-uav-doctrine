@@ -1,4 +1,10 @@
-data/
+# Generated artifacts of later pipeline phases (Phase 3+); kept out of git so
+# raw provenance corpus stays the only thing in data/.
+data/clean/
+data/chunked/
+data/sft/
+data/eval/
+
 checkpoints/
 logs/
 .venv/

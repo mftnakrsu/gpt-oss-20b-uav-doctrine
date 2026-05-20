@@ -1,0 +1,12 @@
+{
+  "source_id": "icao_rpas_conops",
+  "fetched_at": "2026-05-20T19:36:03.155981+00:00",
+  "url_attempted": "https://web.archive.org/web/20251118172855/https://www.icao.int/sites/default/files/left-menu-pdfs/ICAO%20RPAS%20CONOPS.pdf",
+  "final_url": "https://web.archive.org/web/20251118172855/https://www.icao.int/sites/default/files/left-menu-pdfs/ICAO%20RPAS%20CONOPS.pdf",
+  "http_status": 200,
+  "filename": "ICAO%20RPAS%20CONOPS.pdf",
+  "bytes": 570844,
+  "sha256": "6f5c6bf43f8c6d5325666070c881cc5f9d70b0dbe06a79be64beb80a29b03dd8",
+  "license": "icao_public",
+  "used_mirror": false
+}

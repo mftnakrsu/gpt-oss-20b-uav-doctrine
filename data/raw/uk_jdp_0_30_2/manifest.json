@@ -1,0 +1,12 @@
+{
+  "source_id": "uk_jdp_0_30_2",
+  "fetched_at": "2026-05-20T18:38:35.617954+00:00",
+  "url_attempted": "https://assets.publishing.service.gov.uk/media/667d6f155b0d63b556a4b437/ARCHIVE-UAS_JDP_0_30_2.pdf",
+  "final_url": "https://assets.publishing.service.gov.uk/media/667d6f155b0d63b556a4b437/ARCHIVE-UAS_JDP_0_30_2.pdf",
+  "http_status": 200,
+  "filename": "ARCHIVE-UAS_JDP_0_30_2.pdf",
+  "bytes": 2558182,
+  "sha256": "a6aa41cddd784f7bf15928f1e4050a340b2d865533dc38387f0816e1c30fa994",
+  "license": "uk_ogl",
+  "used_mirror": false
+}

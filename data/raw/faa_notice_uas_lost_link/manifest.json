@@ -1,0 +1,12 @@
+{
+  "source_id": "faa_notice_uas_lost_link",
+  "fetched_at": "2026-05-20T19:04:55.247850+00:00",
+  "url_attempted": "https://www.faa.gov/documentLibrary/media/Notice/N_JO_7110.724_5-2-9_UAS_Lost_Link.pdf",
+  "final_url": "https://www.faa.gov/documentLibrary/media/Notice/N_JO_7110.724_5-2-9_UAS_Lost_Link.pdf",
+  "http_status": 200,
+  "filename": "N_JO_7110.724_5-2-9_UAS_Lost_Link.pdf",
+  "bytes": 22773,
+  "sha256": "beee599e3a01b8d598e611701fef61337804c5ec0ae59473a1e79568be275b9b",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

@@ -1,0 +1,12 @@
+{
+  "source_id": "easa_uas_ear",
+  "fetched_at": "2026-05-20T19:48:24.783545+00:00",
+  "url_attempted": "https://www.easa.europa.eu/en/downloads/110913/en",
+  "final_url": "https://www.easa.europa.eu/en/downloads/110913/en",
+  "http_status": 200,
+  "filename": "EASA_EAR_UAS_Jul2024.pdf",
+  "bytes": 6273056,
+  "sha256": "e52f14d22b10b4a8d1599bcbf37cb9e4c7e5e6683e70c5ce5883c29612c7939f",
+  "license": "easa_public",
+  "used_mirror": false
+}

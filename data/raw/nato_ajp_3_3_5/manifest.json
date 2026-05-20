@@ -1,0 +1,12 @@
+{
+  "source_id": "nato_ajp_3_3_5",
+  "fetched_at": "2026-05-20T19:04:55.202596+00:00",
+  "url_attempted": "https://assets.publishing.service.gov.uk/media/65eb0ff562ff489bab87b366/AJP_3_3_5_EdC_Airspace.pdf",
+  "final_url": "https://assets.publishing.service.gov.uk/media/65eb0ff562ff489bab87b366/AJP_3_3_5_EdC_Airspace.pdf",
+  "http_status": 200,
+  "filename": "AJP_3_3_5_EdC_Airspace.pdf",
+  "bytes": 2087942,
+  "sha256": "5888f799924f9e2f14727eb54cdebdbfd02668773bfa7c499d2878165226dd98",
+  "license": "nato_public",
+  "used_mirror": false
+}

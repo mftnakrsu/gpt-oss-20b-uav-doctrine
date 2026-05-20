@@ -109,6 +109,10 @@ class FetchResult:
 # Core download
 # -----------------------------------------------------------------------------
 
+class NotAPDFError(Exception):
+    """Server returned non-PDF content (HTML challenge, empty body, wrong type, etc.)."""
+
+
 @retry(
     stop=stop_after_attempt(3),
     wait=wait_exponential(multiplier=2, min=2, max=30),
@@ -120,15 +124,46 @@ class FetchResult:
 async def _download_one_url(
     client: httpx.AsyncClient, url: str, dest: Path
 ) -> tuple[int, str, int]:
-    """Return (bytes_written, final_url, http_status)."""
+    """Return (bytes_written, final_url, http_status).
+
+    Defensively rejects:
+    - HTTP status != 200 (covers 202 WAF challenges that raise_for_status passes)
+    - text/html or application/json content-types
+    - Empty bodies
+    - Bodies that don't start with %PDF- magic bytes
+    """
     async with client.stream("GET", url, follow_redirects=True) as resp:
         resp.raise_for_status()
+        if resp.status_code != 200:
+            raise NotAPDFError(
+                f"unexpected HTTP {resp.status_code} (likely WAF/queued response)"
+            )
+        ct = resp.headers.get("content-type", "").lower()
+        if "html" in ct or "json" in ct or ct.startswith("text/"):
+            raise NotAPDFError(f"non-PDF content-type ({ct or 'missing'})")
+
         dest.parent.mkdir(parents=True, exist_ok=True)
         size = 0
-        with dest.open("wb") as f:
-            async for chunk in resp.aiter_bytes(chunk_size=64 * 1024):
-                f.write(chunk)
-                size += len(chunk)
+        first_chunk = True
+        try:
+            with dest.open("wb") as f:
+                async for chunk in resp.aiter_bytes(chunk_size=64 * 1024):
+                    if first_chunk:
+                        if not chunk.startswith(b"%PDF-"):
+                            raise NotAPDFError(
+                                f"missing PDF magic (first bytes={chunk[:8]!r})"
+                            )
+                        first_chunk = False
+                    f.write(chunk)
+                    size += len(chunk)
+        except BaseException:
+            dest.unlink(missing_ok=True)
+            raise
+
+        if size == 0:
+            dest.unlink(missing_ok=True)
+            raise NotAPDFError("server returned 0 bytes")
+
         return size, str(resp.url), resp.status_code
 
 

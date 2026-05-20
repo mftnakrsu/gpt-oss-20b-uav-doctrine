@@ -1,0 +1,12 @@
+{
+  "source_id": "us_jp_3_85",
+  "fetched_at": "2026-05-20T20:01:20.095048+00:00",
+  "url_attempted": "https://crows.org/download/cjcs-joint-publication-3-85-joint-electromagnetic-spectrum-operations-jemso/?wpdmdl=1511&ind=1699248928881&refresh=28ae7935&filename=JEMSO_JP3_85.pdf",
+  "final_url": "https://crows.org/download/cjcs-joint-publication-3-85-joint-electromagnetic-spectrum-operations-jemso/?wpdmdl=1511&ind=1699248928881&refresh=28ae7935&filename=JEMSO_JP3_85.pdf",
+  "http_status": 200,
+  "filename": "JEMSO_JP3_85.pdf",
+  "bytes": 1212637,
+  "sha256": "d790520a6a0f5dd31e1055ec3f7b5ee09c5e15a42bd137bf9a1fc0a60ea9a63f",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

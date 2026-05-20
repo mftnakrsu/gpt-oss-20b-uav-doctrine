@@ -1,60 +1,115 @@
-# UAV Doctrine Corpus — Real Data Phase
+# UAV Doctrine Corpus — Phase 1+2 (Ingest)
 
-Working repository for assembling a public-domain English-language UAV /
-UAS doctrine corpus to fine-tune Qwen 2.5 7B.
+Working repository for assembling a public-domain English-language UAV / UAS
+doctrine corpus to fine-tune Qwen 2.5 7B. This README covers the ingest
+layer; the corpus serves as input to later phases (clean → chunk → synth →
+CPT → SFT → eval → serve) which live outside this repo.
 
-## What's in here right now
-
-This is Phase 1+2 of the larger pipeline (see ../PROMPTS.md for the full
-9-phase plan). Just the source registry and the downloader, with **real,
-manually verified URLs** as of 2026-05-20.
+## What's in here
 
 ```
 src/ingest/
-  sources.py    14 doctrine sources, 11 with verified primary URLs
-  fetch.py      async downloader with retry + rate limiting + manifests
-data/raw/       (created on first fetch)
+  sources.py    31 doctrine sources with verified URLs + per-source
+                license, edition, parser strategy, and notes
+  fetch.py      Async httpx downloader with per-host rate limit,
+                tenacity retry, content-type / PDF-magic guard,
+                mirror fallback, and SHA-256 manifests
+data/raw/       30 retrieved PDFs (LFS-tracked) + 30 manifest.json
+.gitattributes  Git LFS configuration for data/raw/**/*.pdf
+NOTICE          Per-source attributions and license terms
 ```
 
-## Source inventory
+## Corpus state (as of last successful ingest)
 
-| Priority | Count | Notes |
-|---|---|---|
-| P0 — US Joint doctrine | 6 | JP 3-30, 3-52, 3-01, 3-09, 3-60, 3-85 |
-| P0 — US Service doctrine / TTP | 5 | AFDP 3-52, AFDP Smart Book, ATP 3-01.81, ATP 3-04.64, ATP 3-52.4 |
-| P0 — UK doctrine | 2 | JDP 0-30.2 (archived but valuable), JDP 0-30 (URL TODO) |
-| P1 — NATO | 1 | AJP-3.3 (URL TODO — NSO portal changes) |
+| Metric | Value |
+|---|---|
+| Sources registered | 31 |
+| Successfully retrieved | 30 |
+| Total corpus size | ~108 MB |
+| Estimated pages | ~4,451 |
+| Estimated tokens | ~1.78M raw doctrine |
+| Coverage | 97% by source count, ~96% by pages |
+| Unrecoverable gaps | 1 (ATP 3-04.64, officially RESCINDED) |
 
-License breakdown:
-- 8 × US public domain (Joint Staff publications)
-- 3 × US Distribution Statement A (Army & multi-service TTPs)
-- 2 × UK Open Government Licence v3.0
-- 1 × NATO public release (pending URL)
+License distribution: 19 × US public domain, 4 × NATO public, 2 × US
+Distribution A, 2 × UK OGL v3.0, 2 × EASA public, 1 × ICAO public.
 
-All 11 ready-to-fetch sources are redistributable under their respective
-public terms. Nothing in this set is think-tank-proprietary.
+See `NOTICE` for full per-source attributions.
+
+## Source inventory by priority
+
+**P0 — Core doctrine (22 sources, 21 retrieved):**
+- US Joint: JP 2-0, JP 3-0, JP 3-01, JP 3-09, JP 3-30, JP 3-52, JP 3-60, JP 3-85, JP 5-0 (1 retrieved is 2017 ed. due to edition gap)
+- US Army: ADP 3-0 (Mar 2025), ADP 6-0 (Mission Command), ATP 3-01.81 (C-UAS), ATP 3-52.4
+- US Air Force: AFDP 3-0 (Jan 2025), AFDP 3-52, Air Force Doctrine Smart Book
+- US Policy / Reference: DoDD 3000.09 (autonomy directive), DoD Dictionary
+- UK: JDP 0-30 (Air Power, 3rd ed.), JDP 0-30.2 (UAS archived)
+- NATO: AJP-3, AJP-3.3
+- Not retrieved: ATP 3-04.64 (RESCINDED)
+
+**P1 — Supplementary (9 sources, 9 retrieved):**
+- NATO: AJP-3.3.5 (Airspace), STO-EN-SCI-271/03 (STANAG 4586 proxy)
+- US Joint (supplementary): JP 3-13.1 (Electronic Warfare)
+- Civil aviation lost-link anchors: FAA JO 7110.65 BB, FAA Notice 7110.724 (UAS Lost Link), EASA EAR for UAS, EASA SAIL III MoC OSO#6 (C2 Link), ICAO RPAS CONOPS
 
 ## Quick start
 
 ```bash
 # install
+python3.11 -m venv .venv
+source .venv/bin/activate
 pip install -e .
 
-# see what we have
+# clone with LFS so binaries arrive too
+# (if you cloned before installing git-lfs, run: git lfs pull)
+
+# see what's in the registry
 python -m src.ingest.sources
 
-# pull the P0 set (will take ~10-20 min, mostly throttled by per-host rate limit)
+# re-fetch (succeeded sources are skipped via manifest cache)
 python -m src.ingest.fetch --priority p0
+python -m src.ingest.fetch --priority p1
+python -m src.ingest.fetch --all       # both
 
 # single source
-python -m src.ingest.fetch --source-id us_jp_3_30
+python -m src.ingest.fetch --source-id us_jp_3_85
 
-# if you're behind a Turkish ISP and .mil hosts are slow/blocked:
-python -m src.ingest.fetch --priority p0 --proxy http://user:pass@eu-host:3128
+# force re-download (ignores manifest cache)
+python -m src.ingest.fetch --all --force
+
+# if running from a network where .mil / FAS are blocked,
+# the registry already points at Wayback / academic mirrors for those.
+# For the remaining ATP 3-04.64 gap, no public mirror exists.
 ```
 
-After fetch, `data/raw/<source_id>/` will contain the PDF plus a
+After fetch, `data/raw/<source_id>/` contains the PDF plus a
 `manifest.json` with sha256, fetched_at, final_url, http_status, license.
+
+## Network notes
+
+This registry was built from a Turkish IP, which surfaced a non-trivial
+amount of geo-fenced .mil hosts. The verified mirror strategy uses, in
+order of preference: original publisher → Wayback Machine snapshot →
+allied gov mirror → academic / training mirror → industry nonprofit
+mirror → leak-aggregator mirror (only for Distribution A content). See
+`NOTICE` for the full mirror infrastructure list.
+
+If you are running ingest from a US/EU egress, the original .mil URLs in
+each source's `mirror_urls` field will succeed directly and you may
+prefer to swap them to primary. From other geographies, leave the
+registry as-is.
+
+## Content-type guard
+
+`fetch.py` validates every download with three checks before writing
+the manifest:
+
+1. HTTP status must be 200 (rejects 202 WAF queue responses)
+2. `Content-Type` must not be `text/html`, `application/json`, or `text/*`
+3. The body's first chunk must start with `%PDF-` magic bytes
+
+This avoids saving Cloudflare WAF challenge HTML, FAA dynamic redirect
+pages, or empty-body proxy responses as if they were valid PDFs.
 
 ## What this is NOT (yet)
 
@@ -72,17 +127,5 @@ this corpus.
 - For sources where no public URL could be verified, the entry stays in
   the registry with `url=None` and a `notes` field explaining what to
   search for — no fabricated URLs.
-
-## Three sources still need URLs
-
-These were intentionally left without primary URLs because verification
-required interactive browsing or NSO portal access:
-
-1. **ATP 3-04.64** — the multi-service UAS MTTP. The 2015 edition is
-   mirrored on `info.publicintelligence.net` and that's wired in as a
-   mirror, so it will still download. If you have access to a newer
-   edition through armypubs (CAC-gated), substitute that URL.
-2. **JDP 0-30** — UK Air and Space Power, current edition. Find via
-   `site:gov.uk "JDP 0-30" "UK air and space power"`.
-3. **AJP-3.3** — NATO Allied Joint Doctrine for Air and Space Operations,
-   current public release. NSO portal: `nso.nato.int`.
+- Edition gaps (JP 3-0, JP 3-60) and the one unrecoverable source
+  (ATP 3-04.64) are documented per-source in `sources.py`.

@@ -1,0 +1,12 @@
+{
+  "source_id": "uk_jdp_0_30",
+  "fetched_at": "2026-05-20T18:38:32.696948+00:00",
+  "url_attempted": "https://assets.publishing.service.gov.uk/media/636baad0d3bf7f1649c4e36d/UK_Air_Power_JDP_0_30.pdf",
+  "final_url": "https://assets.publishing.service.gov.uk/media/636baad0d3bf7f1649c4e36d/UK_Air_Power_JDP_0_30.pdf",
+  "http_status": 200,
+  "filename": "UK_Air_Power_JDP_0_30.pdf",
+  "bytes": 3086292,
+  "sha256": "c5de6f9c63cdc36c81d083e60cb93b7cfa49e99740e2917e3dd9904ab3996512",
+  "license": "uk_ogl",
+  "used_mirror": false
+}

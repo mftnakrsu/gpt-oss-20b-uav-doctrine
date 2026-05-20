@@ -1,0 +1,12 @@
+{
+  "source_id": "us_dod_dictionary",
+  "fetched_at": "2026-05-20T19:05:09.784267+00:00",
+  "url_attempted": "https://web.archive.org/web/2024/https://irp.fas.org/doddir/dod/dictionary.pdf",
+  "final_url": "https://web.archive.org/web/20241225215007/https://irp.fas.org/doddir/dod/dictionary.pdf",
+  "http_status": 200,
+  "filename": "dictionary.pdf",
+  "bytes": 1219556,
+  "sha256": "c5dd903fab3ef3a65c50cf99f605f46347856f844a81ea401c0ef1072f6c55ac",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

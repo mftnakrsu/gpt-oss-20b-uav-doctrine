@@ -1,0 +1,12 @@
+{
+  "source_id": "us_adp_6_0",
+  "fetched_at": "2026-05-20T18:38:39.742213+00:00",
+  "url_attempted": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN34403-ADP_6-0-000-WEB-3.pdf",
+  "final_url": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN34403-ADP_6-0-000-WEB-3.pdf",
+  "http_status": 200,
+  "filename": "ARN34403-ADP_6-0-000-WEB-3.pdf",
+  "bytes": 8578535,
+  "sha256": "7f127f0d7352989b95b3ef91ed799562ca63ad73e43593eb6bb924236d579261",
+  "license": "us_public_domain",
+  "used_mirror": false
+}

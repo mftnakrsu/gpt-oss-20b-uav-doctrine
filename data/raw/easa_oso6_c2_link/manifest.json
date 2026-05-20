@@ -1,0 +1,12 @@
+{
+  "source_id": "easa_oso6_c2_link",
+  "fetched_at": "2026-05-20T19:04:54.423109+00:00",
+  "url_attempted": "https://www.easa.europa.eu/en/downloads/139100/en",
+  "final_url": "https://www.easa.europa.eu/en/downloads/139100/en",
+  "http_status": 200,
+  "filename": "EASA_SAIL_III_OSO6_C2_Link.pdf",
+  "bytes": 377682,
+  "sha256": "3d04a568590cfc81ad3a8548ee44351cf5a4c63c1ff322289ddfc5c0c8d33b15",
+  "license": "easa_public",
+  "used_mirror": false
+}

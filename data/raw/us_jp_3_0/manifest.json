@@ -1,0 +1,12 @@
+{
+  "source_id": "us_jp_3_0",
+  "fetched_at": "2026-05-20T20:11:37.057663+00:00",
+  "url_attempted": "https://web.archive.org/web/2024/https://www.safety.marines.mil/Portals/92/Ground%20Safety%20for%20Marines%20(GSM)/References%20Tab/JP%203-0%20Joint%20Operations%20PDF.pdf",
+  "final_url": "https://web.archive.org/web/20251222192443/https://www.safety.marines.mil/Portals/92/Ground%20Safety%20for%20Marines%20(GSM)/References%20Tab/JP%203-0%20Joint%20Operations%20PDF.pdf",
+  "http_status": 200,
+  "filename": "JP%203-0%20Joint%20Operations%20PDF.pdf",
+  "bytes": 2363291,
+  "sha256": "b59d7167050458987892ddda02c0e5cf0a211aec1fc8f3e57ab5f49c217e1e23",
+  "license": "us_public_domain",
+  "used_mirror": false
+}
