@@ -1,16 +1,42 @@
-# Generated artifacts of later pipeline phases (Phase 3+); kept out of git so
-# raw provenance corpus stays the only thing in data/.
+# --- Python / build ---
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# --- Virtual envs / package managers ---
+.venv/
+
+# --- Project outputs (regenerable; never tracked) ---
+data/interim/
+data/processed/
+# Legacy interim subdirs from the ingest phase
 data/clean/
 data/chunked/
 data/sft/
 data/eval/
-
 checkpoints/
+outputs/
 logs/
-.venv/
-__pycache__/
-*.pyc
-.DS_Store
 wandb/
-*.egg-info/
+*.ckpt
+
+# --- Secrets ---
+.env
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Tooling state ---
 .claude/
+
+# --- Explicitly tracked ---
+# data/raw/ is the provenance corpus and MUST be tracked (LFS for PDFs).
+!data/raw/
+!data/raw/**
