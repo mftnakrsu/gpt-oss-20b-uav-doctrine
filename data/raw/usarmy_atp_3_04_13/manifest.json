@@ -1,0 +1,19 @@
+{
+  "source_id": "usarmy_atp_3_04_13",
+  "fetched_at": "2026-05-23T22:38:16.906049+00:00",
+  "url_attempted": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN34174-ATP_3-04.13-000-WEB-1.pdf",
+  "final_url": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN34174-ATP_3-04.13-000-WEB-1.pdf",
+  "http_status": 200,
+  "filename": "ARN34174-ATP_3-04.13-000-WEB-1.pdf",
+  "bytes": 3193621,
+  "sha256": "ee2049da2a2f7b3770916cfbe93cd21b97f37c01798067d3069eb318eace9ebe",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "ATP 3-04.13, Helicopter and Small Aircraft Battle Damage Assessment",
+  "author_or_publisher": "US Army Headquarters",
+  "date_published": "2021-11",
+  "source_tier": 1,
+  "license_note": "US Government work \u2014 Distribution A",
+  "page_count_if_pdf": 50,
+  "notes": "Battle damage assessment for rotary-wing and small aircraft (extends to small UAS) \u2014 relevant for lost-link-following damage-state reasoning."
+}

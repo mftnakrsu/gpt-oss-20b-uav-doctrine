@@ -1,0 +1,19 @@
+{
+  "source_id": "usarmy_atp_3_04_6",
+  "fetched_at": "2026-05-23T22:37:53.391932+00:00",
+  "url_attempted": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN35738-ATP_3-04.6-001-WEB-2.pdf",
+  "final_url": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN35738-ATP_3-04.6-001-WEB-2.pdf",
+  "http_status": 200,
+  "filename": "ARN35738-ATP_3-04.6-001-WEB-2.pdf",
+  "bytes": 3400063,
+  "sha256": "3d259d733a70b24c315d15ab19878a15c929aa94e905467be29135e0779e8b52",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "ATP 3-04.6, Techniques for Forward Arming and Refueling Points",
+  "author_or_publisher": "US Army Headquarters",
+  "date_published": "2022-01",
+  "source_tier": 1,
+  "license_note": "US Government work \u2014 Distribution A",
+  "page_count_if_pdf": 104,
+  "notes": "Aviation FARP procedures, sustainment context for UAS operations."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "crs_2025_counter_uas_R48477",
+  "fetched_at": "2026-05-23T22:38:49.987956+00:00",
+  "url_attempted": "https://www.congress.gov/crs_external_products/R/PDF/R48477/R48477.1.pdf",
+  "final_url": "https://www.congress.gov/crs_external_products/R/PDF/R48477/R48477.1.pdf",
+  "http_status": 200,
+  "filename": "R48477.1.pdf",
+  "bytes": 1718651,
+  "sha256": "d3f7c3b96ae15e1c68fe3d8762a3e737e8e49b411f0c530cc76e65a63b656b37",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "Department of Defense Counter Unmanned Aircraft Systems (CRS R48477)",
+  "author_or_publisher": "Congressional Research Service",
+  "date_published": "2025-03",
+  "source_tier": 3,
+  "license_note": "US Government work \u2014 public domain",
+  "page_count_if_pdf": 44,
+  "notes": "Mar 2025 in-depth report on DoD C-UAS strategy and acquisition."
+}

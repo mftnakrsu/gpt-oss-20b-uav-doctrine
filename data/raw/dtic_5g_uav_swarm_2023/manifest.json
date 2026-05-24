@@ -1,0 +1,19 @@
+{
+  "source_id": "dtic_5g_uav_swarm_2023",
+  "fetched_at": "2026-05-23T22:38:45.609399+00:00",
+  "url_attempted": "https://apps.dtic.mil/sti/trecms/pdf/AD1164247.pdf",
+  "final_url": "https://apps.dtic.mil/sti/trecms/pdf/AD1164247.pdf",
+  "http_status": 200,
+  "filename": "AD1164247.pdf",
+  "bytes": 2752772,
+  "sha256": "3f9417a458e3f251d8dc5b2948d806bcd62b6469a4ce3b70e32463779c8b8e76",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "5G-Inspired Method for Ranging of UAVs in Swarming Operations",
+  "author_or_publisher": "DTIC technical report",
+  "date_published": "2023-03",
+  "source_tier": 2,
+  "license_note": "Distribution A",
+  "page_count_if_pdf": 87,
+  "notes": "UAV swarm ranging via 5G primitives \u2014 useful for the comms/GNSS-denied environment the project's lost-link target assumes."
+}

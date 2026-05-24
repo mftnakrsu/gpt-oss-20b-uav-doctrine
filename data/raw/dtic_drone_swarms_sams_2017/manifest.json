@@ -1,0 +1,19 @@
+{
+  "source_id": "dtic_drone_swarms_sams_2017",
+  "fetched_at": "2026-05-23T22:38:42.995906+00:00",
+  "url_attempted": "https://apps.dtic.mil/sti/pdfs/AD1039921.pdf",
+  "final_url": "https://apps.dtic.mil/sti/pdfs/AD1039921.pdf",
+  "http_status": 200,
+  "filename": "AD1039921.pdf",
+  "bytes": 356347,
+  "sha256": "b5f199defc1ef23b36f8534980d50637cc4888c033850d3f21cd3664467b0990",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "Drone Swarms (SAMS monograph) \u2014 MAJ Andrew William Sanders, US Army",
+  "author_or_publisher": "School of Advanced Military Studies (DTIC)",
+  "date_published": "2017-05",
+  "source_tier": 2,
+  "license_note": "Distribution A",
+  "page_count_if_pdf": 54,
+  "notes": "SAMS-level operational analysis of swarm warfare."
+}

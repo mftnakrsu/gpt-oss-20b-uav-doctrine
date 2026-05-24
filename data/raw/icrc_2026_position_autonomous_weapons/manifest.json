@@ -1,0 +1,19 @@
+{
+  "source_id": "icrc_2026_position_autonomous_weapons",
+  "fetched_at": "2026-05-23T22:38:52.238113+00:00",
+  "url_attempted": "https://www.icrc.org/sites/default/files/2026-03/4896_002_Autonomous_Weapons_Systems_-_IHL-ICRC.pdf",
+  "final_url": "https://www.icrc.org/sites/default/files/2026-03/4896_002_Autonomous_Weapons_Systems_-_IHL-ICRC.pdf",
+  "http_status": 200,
+  "filename": "4896_002_Autonomous_Weapons_Systems_-_IHL-ICRC.pdf",
+  "bytes": 473362,
+  "sha256": "1b74c6a5e7f9ce576049beba99d3121e2f4b77809edb96b883dbcabda5e19426",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "ICRC Position Paper: Autonomous Weapon Systems and International Humanitarian Law",
+  "author_or_publisher": "International Committee of the Red Cross",
+  "date_published": "2026-03",
+  "source_tier": 3,
+  "license_note": "ICRC \u2014 published for public distribution",
+  "page_count_if_pdf": 23,
+  "notes": "ICRC framing of IHL constraints on AWS. Direct anchor for the ethics section of the project paper (NOT a LAWS paper framing)."
+}

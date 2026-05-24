@@ -1,0 +1,19 @@
+{
+  "source_id": "icrc_2025_position_autonomous_weapons_ihl",
+  "fetched_at": "2026-05-23T22:38:54.868954+00:00",
+  "url_attempted": "https://www.icrc.org/sites/default/files/media_file/2025-10/ICRC-Position_Paper-Autonomous_Weapon_Systems_and_IHL-Selected_issues_Oct2025.pdf",
+  "final_url": "https://www.icrc.org/sites/default/files/media_file/2025-10/ICRC-Position_Paper-Autonomous_Weapon_Systems_and_IHL-Selected_issues_Oct2025.pdf",
+  "http_status": 200,
+  "filename": "ICRC-Position_Paper-Autonomous_Weapon_Systems_and_IHL-Selected_issues_Oct2025.pdf",
+  "bytes": 725044,
+  "sha256": "44edd1d0f5667fda2ca83e950dd337c089bc878d1faa6cb0d13ac1ecda349fa7",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "ICRC Position Paper (Oct 2025): Autonomous Weapon Systems and IHL \u2014 Selected Issues",
+  "author_or_publisher": "International Committee of the Red Cross",
+  "date_published": "2025-10",
+  "source_tier": 3,
+  "license_note": "ICRC \u2014 published for public distribution",
+  "page_count_if_pdf": 22,
+  "notes": ""
+}

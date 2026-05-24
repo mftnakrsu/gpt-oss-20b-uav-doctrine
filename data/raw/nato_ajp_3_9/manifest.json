@@ -1,0 +1,19 @@
+{
+  "source_id": "nato_ajp_3_9",
+  "fetched_at": "2026-05-23T22:38:32.722018+00:00",
+  "url_attempted": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1033306/AJP-3.9_EDB_V1_E.pdf",
+  "final_url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1033306/AJP-3.9_EDB_V1_E.pdf",
+  "http_status": 200,
+  "filename": "AJP-3.9_EDB_V1_E.pdf",
+  "bytes": 2361203,
+  "sha256": "cbc1d451bd17030f53c92edb99591ddaffdc6e044d386eb57ebd2a08f46efb50",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "AJP-3.9, Allied Joint Doctrine for Joint Targeting (Edition B Version 1)",
+  "author_or_publisher": "NATO Standardization Office (mirrored via UK MOD)",
+  "date_published": "2021-03",
+  "source_tier": 1,
+  "license_note": "NATO Unclassified \u2014 releasable to the public; UK OGL mirror",
+  "page_count_if_pdf": 126,
+  "notes": "NATO joint targeting; full-spectrum F2T2EA including cyber & space."
+}

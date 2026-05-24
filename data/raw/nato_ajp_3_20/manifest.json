@@ -1,0 +1,19 @@
+{
+  "source_id": "nato_ajp_3_20",
+  "fetched_at": "2026-05-23T22:38:34.708766+00:00",
+  "url_attempted": "https://iwar.org.uk/wp-content/uploads/2021/06/AJP-3.20-EDA-V1-E.pdf",
+  "final_url": "https://iwar.org.uk/wp-content/uploads/2021/06/AJP-3.20-EDA-V1-E.pdf",
+  "http_status": 200,
+  "filename": "AJP-3.20-EDA-V1-E.pdf",
+  "bytes": 736507,
+  "sha256": "5b212eabb4085b148965a799cab21565702a122ce61b909a89c396e156f53702",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "AJP-3.20, Allied Joint Doctrine for Cyberspace Operations (Edition A Version 1)",
+  "author_or_publisher": "NATO Standardization Office",
+  "date_published": "2020-01",
+  "source_tier": 1,
+  "license_note": "NATO Unclassified \u2014 releasable to the public",
+  "page_count_if_pdf": 50,
+  "notes": "NATO cyberspace ops; cyber attack vectors against UAS C2."
+}

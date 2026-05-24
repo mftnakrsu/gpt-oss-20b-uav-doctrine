@@ -1,0 +1,19 @@
+{
+  "source_id": "hdiac_ukraine_lessons_2023",
+  "fetched_at": "2026-05-23T22:38:46.527069+00:00",
+  "url_attempted": "https://hdiac.dtic.mil/wp-content/uploads/2023/02/TI-Response-Report_HDIAC_Technological-Lessons-Learned-from-the-Conflict-Between-Russia-and-Ukraine_2212023.pdf",
+  "final_url": "https://hdiac.dtic.mil/wp-content/uploads/2023/02/TI-Response-Report_HDIAC_Technological-Lessons-Learned-from-the-Conflict-Between-Russia-and-Ukraine_2212023.pdf",
+  "http_status": 200,
+  "filename": "TI-Response-Report_HDIAC_Technological-Lessons-Learned-from-the-Conflict-Between-Russia-and-Ukraine_2212023.pdf",
+  "bytes": 627724,
+  "sha256": "7638b732a1174879c8e9aa9ed3651b1874e0f0fb233013bbdfb3c8e816ac18a3",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "Technological Lessons Learned from the Conflict Between Russia and Ukraine (HDIAC/DTIC)",
+  "author_or_publisher": "Homeland Defense and Security Information Analysis Center (DTIC)",
+  "date_published": "2023-02",
+  "source_tier": 2,
+  "license_note": "Distribution A",
+  "page_count_if_pdf": 17,
+  "notes": ""
+}

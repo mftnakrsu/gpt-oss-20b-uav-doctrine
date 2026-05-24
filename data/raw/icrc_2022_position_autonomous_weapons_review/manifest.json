@@ -1,0 +1,19 @@
+{
+  "source_id": "icrc_2022_position_autonomous_weapons_review",
+  "fetched_at": "2026-05-23T22:38:55.765820+00:00",
+  "url_attempted": "https://international-review.icrc.org/sites/default/files/reviews-pdf/2022-01/icrc-position-on-autonomous-weapon-systems-icrc-position-and-background-paper-915.pdf",
+  "final_url": "https://international-review.icrc.org/sites/default/files/reviews-pdf/2022-01/icrc-position-on-autonomous-weapon-systems-icrc-position-and-background-paper-915.pdf",
+  "http_status": 200,
+  "filename": "icrc-position-on-autonomous-weapon-systems-icrc-position-and-background-paper-915.pdf",
+  "bytes": 327528,
+  "sha256": "adf5e0f9febf7a1a9a73d15f0e8f20e2f0b3e3a5533923d3161d25090e9baf09",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "ICRC Position on Autonomous Weapon Systems (International Review of the Red Cross PDF, 2022)",
+  "author_or_publisher": "International Review of the Red Cross / ICRC",
+  "date_published": "2022-01",
+  "source_tier": 3,
+  "license_note": "ICRC \u2014 published for public distribution",
+  "page_count_if_pdf": 15,
+  "notes": ""
+}

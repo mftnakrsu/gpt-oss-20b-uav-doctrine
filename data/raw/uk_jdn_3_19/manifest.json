@@ -1,0 +1,19 @@
+{
+  "source_id": "uk_jdn_3_19",
+  "fetched_at": "2026-05-23T22:28:32.718906+00:00",
+  "url_attempted": "https://web.archive.org/web/2022/https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/673940/doctrine_uk_uas_jdp_0_30_2.pdf",
+  "final_url": "https://web.archive.org/web/20230102043012/https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/673940/doctrine_uk_uas_jdp_0_30_2.pdf",
+  "http_status": 200,
+  "filename": "doctrine_uk_uas_jdp_0_30_2.pdf",
+  "bytes": 1462127,
+  "sha256": "43480faced446fa7bef5954cc4f30138df8a5169f60e60b054ef402522323d52",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "JDN 3/19, UK Approach to Unmanned Aircraft Systems (withdrawn \u2014 Wayback)",
+  "author_or_publisher": "UK MOD DCDC",
+  "date_published": "2017-08",
+  "source_tier": 1,
+  "license_note": "UK Open Government Licence v3.0 (Wayback)",
+  "page_count_if_pdf": 84,
+  "notes": "UK approach to UAS; superseded but historical doctrinal record."
+}

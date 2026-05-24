@@ -1,0 +1,19 @@
+{
+  "source_id": "usarmy_atp_3_04_7",
+  "fetched_at": "2026-05-23T22:38:09.715172+00:00",
+  "url_attempted": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN31028-ATP_3-04.7-000-WEB-1.pdf",
+  "final_url": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN31028-ATP_3-04.7-000-WEB-1.pdf",
+  "http_status": 200,
+  "filename": "ARN31028-ATP_3-04.7-000-WEB-1.pdf",
+  "bytes": 4376084,
+  "sha256": "79c37c11b52f6d0ec94e9297d84736731cc0be599cf48a0182f7ac566e9bfc26",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "ATP 3-04.7, Army Aviation Maintenance",
+  "author_or_publisher": "US Army Headquarters",
+  "date_published": "2020-10",
+  "source_tier": 1,
+  "license_note": "US Government work \u2014 Distribution A",
+  "page_count_if_pdf": 196,
+  "notes": "Aviation maintenance with explicit UAS coverage; sustainment doctrine for the GCS/airframe side of an SLM-equipped UAS."
+}

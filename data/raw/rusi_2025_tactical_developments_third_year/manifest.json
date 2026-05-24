@@ -1,0 +1,19 @@
+{
+  "source_id": "rusi_2025_tactical_developments_third_year",
+  "fetched_at": "2026-05-23T22:38:58.016743+00:00",
+  "url_attempted": "https://static.rusi.org/tactical-developments-third-year-russo-ukrainian-war-february-2205.pdf",
+  "final_url": "https://static.rusi.org/tactical-developments-third-year-russo-ukrainian-war-february-2205.pdf",
+  "http_status": 200,
+  "filename": "tactical-developments-third-year-russo-ukrainian-war-february-2205.pdf",
+  "bytes": 1015004,
+  "sha256": "60e4a7188f3ba0abe8c50c37bfc2d96fb7d2b718108c8b5da759aa7444f05c41",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "Tactical Developments During the Third Year of the Russo-Ukrainian War \u2014 RUSI",
+  "author_or_publisher": "Royal United Services Institute",
+  "date_published": "2025-02",
+  "source_tier": 4,
+  "license_note": "RUSI \u2014 free download for non-commercial use",
+  "page_count_if_pdf": 25,
+  "notes": "Fieldwork-based analysis of FPV/UAS efficacy; notes only 20-40% of FPV strikes reach target \u2014 concrete grounding for what UAS decision support needs to handle."
+}

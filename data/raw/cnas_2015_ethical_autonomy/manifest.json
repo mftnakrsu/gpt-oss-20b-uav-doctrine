@@ -1,0 +1,19 @@
+{
+  "source_id": "cnas_2015_ethical_autonomy",
+  "fetched_at": "2026-05-23T22:38:57.157567+00:00",
+  "url_attempted": "http://files.cnas.org/documents/Ethical-Autonomy-Working-Paper_021015_v02.pdf",
+  "final_url": "http://files.cnas.org/documents/Ethical-Autonomy-Working-Paper_021015_v02.pdf",
+  "http_status": 200,
+  "filename": "Ethical-Autonomy-Working-Paper_021015_v02.pdf",
+  "bytes": 343288,
+  "sha256": "c1d7419a6d7de2259e5da3d1dbc791f1bcd628acdef829d193e735d8ecd7b0af",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "An Ethical Foundation for the Use of Autonomous Weapons (CNAS working paper)",
+  "author_or_publisher": "Center for a New American Security",
+  "date_published": "2015-02",
+  "source_tier": 3,
+  "license_note": "CNAS \u2014 free download with attribution",
+  "page_count_if_pdf": 23,
+  "notes": "Scharre/Sayler foundational paper on autonomous-weapon ethics."
+}

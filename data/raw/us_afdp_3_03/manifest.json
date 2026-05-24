@@ -1,0 +1,19 @@
+{
+  "source_id": "us_afdp_3_03",
+  "fetched_at": "2026-05-23T22:27:59.732030+00:00",
+  "url_attempted": "https://web.archive.org/web/2024/https://www.doctrine.af.mil/Portals/61/documents/AFDP_3-03/3-03-AFDP-COUNTERLAND.pdf",
+  "final_url": "https://web.archive.org/web/20241207205749/https://www.doctrine.af.mil/Portals/61/documents/AFDP_3-03/3-03-AFDP-COUNTERLAND.pdf",
+  "http_status": 200,
+  "filename": "3-03-AFDP-COUNTERLAND.pdf",
+  "bytes": 1032590,
+  "sha256": "4d9b51920819f05159658cbdac140a5310defae4c9fae721fac5f6a03063b183",
+  "license": "expanded_corpus",
+  "used_mirror": true,
+  "title": "AFDP 3-03, Counterland Operations",
+  "author_or_publisher": "US Air Force (LeMay Center)",
+  "date_published": "2022-09",
+  "source_tier": 1,
+  "license_note": "US Government work \u2014 public domain",
+  "page_count_if_pdf": 64,
+  "notes": "Counterland: CAS, AI, armed-UAS employment, kill-box doctrine."
+}

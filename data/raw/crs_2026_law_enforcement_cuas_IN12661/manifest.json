@@ -1,0 +1,19 @@
+{
+  "source_id": "crs_2026_law_enforcement_cuas_IN12661",
+  "fetched_at": "2026-05-23T22:38:51.257657+00:00",
+  "url_attempted": "https://www.everycrsreport.com/files/2026-02-27_IN12661_287865abb1cd221dda4fa6e56fa00fae90a7f86a.pdf",
+  "final_url": "https://www.everycrsreport.com/files/2026-02-27_IN12661_287865abb1cd221dda4fa6e56fa00fae90a7f86a.pdf",
+  "http_status": 200,
+  "filename": "2026-02-27_IN12661_287865abb1cd221dda4fa6e56fa00fae90a7f86a.pdf",
+  "bytes": 336165,
+  "sha256": "9e1927b9c50ec524a7d48bd8462056124b8cb8a18b80a502b88e99f646abde21",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "Law Enforcement and the Evolving C-UAS Landscape (CRS IN12661, everycrsreport mirror)",
+  "author_or_publisher": "Congressional Research Service",
+  "date_published": "2026-02",
+  "source_tier": 3,
+  "license_note": "US Government work \u2014 public domain",
+  "page_count_if_pdf": 3,
+  "notes": ""
+}

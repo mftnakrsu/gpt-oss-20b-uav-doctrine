@@ -1,0 +1,19 @@
+{
+  "source_id": "usarmy_fm_3_81",
+  "fetched_at": "2026-05-23T22:37:40.394401+00:00",
+  "url_attempted": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN34192-FM_3-81-000-WEB-1.pdf",
+  "final_url": "https://armypubs.army.mil/epubs/DR_pubs/DR_a/ARN34192-FM_3-81-000-WEB-1.pdf",
+  "http_status": 200,
+  "filename": "ARN34192-FM_3-81-000-WEB-1.pdf",
+  "bytes": 4142689,
+  "sha256": "29ef6cd397d6d083d892c81b0ff74555953d1364bfd014bdbe7c62e5c7221506",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "FM 3-81, Maneuver Enhancement Brigade",
+  "author_or_publisher": "US Army Headquarters",
+  "date_published": "2021-11",
+  "source_tier": 1,
+  "license_note": "US Government work \u2014 public domain",
+  "page_count_if_pdf": 188,
+  "notes": "MEB includes ADA / C-UAS at brigade level."
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "uk_jdp_2_00",
+  "fetched_at": "2026-05-23T22:38:36.060876+00:00",
+  "url_attempted": "https://assets.publishing.service.gov.uk/media/653a4b0780884d0013f71bb0/JDP_2_00_Ed_4_web.pdf",
+  "final_url": "https://assets.publishing.service.gov.uk/media/653a4b0780884d0013f71bb0/JDP_2_00_Ed_4_web.pdf",
+  "http_status": 200,
+  "filename": "JDP_2_00_Ed_4_web.pdf",
+  "bytes": 5672911,
+  "sha256": "b325402baca1ef65c42b88eefd141d7c6ef624e855b0c607ce93810986b6b823",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "JDP 2-00, Intelligence, Counter-intelligence and Security Support to Joint Operations (Ed 4)",
+  "author_or_publisher": "UK MOD DCDC",
+  "date_published": "2023-08",
+  "source_tier": 1,
+  "license_note": "UK Open Government Licence v3.0",
+  "page_count_if_pdf": 192,
+  "notes": "UK intelligence support to joint ops, includes ISR / UAS tasking."
+}

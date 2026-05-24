@@ -1,0 +1,19 @@
+{
+  "source_id": "nps_swarm_vs_swarm_2013",
+  "fetched_at": "2026-05-23T22:38:40.055138+00:00",
+  "url_attempted": "https://apps.dtic.mil/sti/tr/pdf/ADA582919.pdf",
+  "final_url": "https://apps.dtic.mil/sti/tr/pdf/ADA582919.pdf",
+  "http_status": 200,
+  "filename": "ADA582919.pdf",
+  "bytes": 2741277,
+  "sha256": "8ea8ef193c3fa82c3d60cdfc3f98bbaf45068d23e18d80fbcef2bebbe61dfe73",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "Agent-Based Simulation of a Defensive UAV Swarm Against an Enemy UAV Swarm (NPS thesis)",
+  "author_or_publisher": "Naval Postgraduate School (DTIC)",
+  "date_published": "2013-09",
+  "source_tier": 2,
+  "license_note": "Distribution A: approved for public release; unlimited",
+  "page_count_if_pdf": 119,
+  "notes": "Swarm-on-swarm decision-making with autonomous agents \u2014 directly relevant to multi-UAS coordination under degraded comms."
+}

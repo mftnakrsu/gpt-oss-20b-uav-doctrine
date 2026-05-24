@@ -1,0 +1,19 @@
+{
+  "source_id": "nps_uas_swarm_marines_2014",
+  "fetched_at": "2026-05-23T22:38:41.400788+00:00",
+  "url_attempted": "https://apps.dtic.mil/sti/pdfs/AD1069733.pdf",
+  "final_url": "https://apps.dtic.mil/sti/pdfs/AD1069733.pdf",
+  "http_status": 200,
+  "filename": "AD1069733.pdf",
+  "bytes": 3357161,
+  "sha256": "41649e37759f8b2733a62f89d8e872bea72da60eb8cc3809ec941e5db121bfb9",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "Swarming Unmanned Aerial Vehicles: Extending MAGTF Communications Using UAVs (NPS thesis)",
+  "author_or_publisher": "Naval Postgraduate School (DTIC)",
+  "date_published": "2014-12",
+  "source_tier": 2,
+  "license_note": "Distribution A",
+  "page_count_if_pdf": 115,
+  "notes": ""
+}

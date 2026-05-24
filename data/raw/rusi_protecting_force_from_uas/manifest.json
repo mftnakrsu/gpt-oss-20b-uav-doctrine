@@ -1,0 +1,19 @@
+{
+  "source_id": "rusi_protecting_force_from_uas",
+  "fetched_at": "2026-05-23T22:38:59.442286+00:00",
+  "url_attempted": "https://static.rusi.org/protecting-the-force-from-uncrewed-uas.pdf",
+  "final_url": "https://static.rusi.org/protecting-the-force-from-uncrewed-uas.pdf",
+  "http_status": 200,
+  "filename": "protecting-the-force-from-uncrewed-uas.pdf",
+  "bytes": 1016826,
+  "sha256": "15231c9c044552d778997cf2c1d9f2135296d43030ed48d5a9f29deac1c013b5",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "Protecting the Force from Uncrewed Aerial Systems \u2014 RUSI",
+  "author_or_publisher": "Royal United Services Institute",
+  "date_published": "2024-07",
+  "source_tier": 4,
+  "license_note": "RUSI \u2014 free download for non-commercial use",
+  "page_count_if_pdf": 42,
+  "notes": ""
+}

@@ -1,0 +1,19 @@
+{
+  "source_id": "nato_ajp_3_10",
+  "fetched_at": "2026-05-23T22:38:33.457454+00:00",
+  "url_attempted": "https://info.publicintelligence.net/NATO-IO.pdf",
+  "final_url": "https://info.publicintelligence.net/NATO-IO.pdf",
+  "http_status": 200,
+  "filename": "NATO-IO.pdf",
+  "bytes": 613970,
+  "sha256": "7694a56af9486382311632cd85b941166da8a5b97631c955dec8832c6a9e6e4a",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "AJP-3.10, Allied Joint Doctrine for Information Operations",
+  "author_or_publisher": "NATO Standardization Office",
+  "date_published": "2015-11",
+  "source_tier": 1,
+  "license_note": "NATO Unclassified \u2014 releasable to the public",
+  "page_count_if_pdf": 82,
+  "notes": "NATO information operations; relevant for UAS as information-operation enablers (loudspeakers, leaflet drop, ISR)."
+}

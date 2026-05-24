@@ -1,0 +1,19 @@
+{
+  "source_id": "benning_infantry_mag_2023_russo_ukraine",
+  "fetched_at": "2026-05-23T22:40:32.276704+00:00",
+  "url_attempted": "https://www.benning.army.mil/infantry/magazine/issues/2023/Summer/pdf/13_Wilkins_txt.pdf",
+  "final_url": "https://www.benning.army.mil/infantry/magazine/issues/2023/Summer/pdf/13_Wilkins_txt.pdf",
+  "http_status": 200,
+  "filename": "13_Wilkins_txt.pdf",
+  "bytes": 348788,
+  "sha256": "c31a31f331bb712fcadc167d123b7d796216fff9338973200a5c5e5c37f014c5",
+  "license": "expanded_corpus",
+  "used_mirror": false,
+  "title": "The 2022 Russo-Ukrainian War (US Army Infantry Magazine 2023)",
+  "author_or_publisher": "US Army Maneuver Center of Excellence (Fort Moore/Benning)",
+  "date_published": "2023-07",
+  "source_tier": 4,
+  "license_note": "US Government work \u2014 public domain",
+  "page_count_if_pdf": 5,
+  "notes": ""
+}
