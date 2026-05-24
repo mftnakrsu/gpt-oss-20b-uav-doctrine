@@ -1,0 +1,68 @@
+# Phase A — UAV doctrine Q&A SFT on OpenAI gpt-oss-20b via Tinker
+#
+# Mirrors the Python constants at the top of scripts/train_phase_a.py.
+# The script is the source of truth at runtime; this file documents the
+# canonical configuration for human review and is loaded if --config is
+# passed.
+
+run_name: phase_a_qa_v1
+
+# --- model ---
+base_model: openai/gpt-oss-20b
+renderer_name: gpt_oss_no_sysprompt   # cookbook's recommended renderer for gpt-oss
+
+# --- LoRA ---
+# tinker.ServiceClient.create_lora_training_client exposes `rank` only.
+# train_mlp / train_attn / train_unembed all default to True, giving us
+# the "all-linear" target-module surface implicitly. lora_alpha and
+# lora_dropout aren't surfaced by the SDK at this version — Tinker
+# applies its internal defaults.
+lora_rank: 16
+lora_train_mlp: true
+lora_train_attn: true
+lora_train_unembed: true
+
+# --- optimizer ---
+# tinker_cookbook.hyperparam_utils.get_lr("openai/gpt-oss-20b") raises
+# NotImplementedError (uncalibrated). We use the cookbook's default
+# scalar 1e-4 which sits in the safe band for 20B-MoE LoRA.
+learning_rate: 1.0e-4
+lr_schedule: linear        # linear warmup → linear decay
+warmup_steps: 100
+weight_decay: 0.0
+gradient_clip: 1.0
+adam_beta1: 0.9
+adam_beta2: 0.95
+adam_eps: 1.0e-8
+
+# --- data ---
+train_path: data/processed/qa/train.jsonl
+val_path:   data/processed/qa/val.jsonl
+batch_size: 32             # ~32 * 200 tokens ≈ 6,400 tok/step — well under model context
+max_seq_length: 512        # train p99 is 240 tokens; this leaves 2x headroom
+
+# --- training cadence ---
+num_epochs: 2
+eval_every_n_steps: 50
+save_every_n_steps:  100
+log_every_n_steps:   10
+
+# --- determinism ---
+seed: 42
+
+# --- guardrails (hard caps; script aborts when hit) ---
+# Cost cap is a runaway-spend safety net, not a budget. The project has
+# abundant Tinker credits; $200 is generous against the ~$2 expected spend
+# but still catches anything pathological (infinite loop, runaway batch
+# growth, etc.).
+hard_cost_cap_usd:       200.0
+hard_walltime_cap_seconds: 7200      # 2 hours
+divergence_streak_threshold: 50      # consecutive steps over ratio
+divergence_ratio: 1.5                # smoothed loss / min-so-far
+placeholder_usd_per_million_tokens: 0.40   # ADR 0001 placeholder Tinker rate
+
+# --- I/O ---
+log_path: checkpoints/phase_a_qa
+metrics_path: outputs/phase_a_qa_metrics.jsonl
+wandb_project: finetune-slm    # used only if WANDB_API_KEY is set
+wandb_name: phase_a_qa_v1
