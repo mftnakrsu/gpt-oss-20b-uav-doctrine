@@ -50,7 +50,7 @@ in this Space — it is served from the Tinker sampler checkpoint referenced in
 ## Links
 
 - 🤗 Model card: <https://huggingface.co/meftun/gpt-oss-20b-uav-doctrine>
-- 💻 Project repository: <https://github.com/mftnakrsu/uav-doctrine-slm>
+- 💻 Project repository: <https://github.com/mftnakrsu/gpt-oss-20b-uav-doctrine>
 
 ## How it was evaluated
 

@@ -69,7 +69,7 @@ DEFAULT_TEMPERATURE = 0.3
 DEFAULT_MAX_TOKENS = 300
 
 HF_MODEL_URL = "https://huggingface.co/meftun/gpt-oss-20b-uav-doctrine"
-GITHUB_REPO_URL = "https://github.com/mftnakrsu/uav-doctrine-slm"
+GITHUB_REPO_URL = "https://github.com/mftnakrsu/gpt-oss-20b-uav-doctrine"
 
 # Force light mode. Gradio decides dark/light client-side (it honours the OS
 # preference), so the only robust server-side override is the `?__theme=light`

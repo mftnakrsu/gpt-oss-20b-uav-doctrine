@@ -1,9 +1,12 @@
 # NOTICE — Redistributed Doctrine Material
 
-This repository redistributes 30 publicly-released doctrine and reference PDFs
-from US, UK, NATO, ICAO, EASA, and FAA sources. All sources are explicitly
-permitted for public redistribution under their respective licenses, as
-catalogued in `src/ingest/sources.py`. Every redistributed PDF carries a
+This repository redistributes **58** publicly-released doctrine, reference, and
+open-analysis documents from US, UK, NATO, ICAO, EASA, FAA, and open research
+sources (CRS, ICRC, CNAS, RUSI, NPS, DTIC, and others). The original 30-document
+core corpus was selected as US public-domain or open-licensed material explicitly
+permitted for redistribution (catalogued in `src/ingest/sources.py`); the 28
+expansion documents are publicly available from their publishers, with per-source
+terms recorded in each `manifest.json` (see *Corpus expansion* below). Every redistributed PDF carries a
 `manifest.json` alongside it in `data/raw/<source_id>/` documenting:
 
 - The publisher
@@ -30,6 +33,23 @@ are recorded in the per-source `notes` field of `sources.py`.
 | 2 | UK Open Government Licence v3.0 | https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/ |
 | 2 | EASA Public | Free public use with attribution to the European Union Aviation Safety Agency |
 | 1 | ICAO Public | International Civil Aviation Organization public release |
+
+---
+
+## Corpus expansion (documents 31–58)
+
+The license-summary table above and the attributions below enumerate the
+**original 30-document core corpus**. The corpus was later expanded to **58
+documents** (see [`docs/journal/02-data-expansion.md`](docs/journal/02-data-expansion.md)).
+The per-source publisher, license, and provenance for **every** document —
+original and expansion — are recorded in each `data/raw/<source_id>/manifest.json`.
+
+Expansion sources are predominantly **US Government works** (e.g. CRS, DTIC, NPS —
+US public domain). They also include **publicly-released analyses from
+organizations such as ICRC, CNAS, and RUSI that retain their own copyright**;
+these are included for non-commercial academic research. For the redistribution
+terms of any specific expansion document, consult its `manifest.json` and the
+original publisher.
 
 ---
 
