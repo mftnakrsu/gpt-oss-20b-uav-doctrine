@@ -13,7 +13,11 @@ dist/
 
 # --- Project outputs (regenerable; never tracked) ---
 data/interim/
-data/processed/
+# Track the final Q&A splits (useful downstream artifact); ignore everything
+# else regenerable under data/processed/ (e.g. the empty Phase B scenario dir).
+data/processed/*
+!data/processed/qa/
+!data/processed/qa/**
 # Legacy interim subdirs from the ingest phase
 data/clean/
 data/chunked/
@@ -23,10 +27,13 @@ checkpoints/
 outputs/
 logs/
 wandb/
+mlruns/
 *.ckpt
+**/.archive_url
 
 # --- Secrets ---
 .env
+.env.local
 
 # --- Editors / OS ---
 .vscode/
@@ -35,6 +42,8 @@ wandb/
 
 # --- Tooling state ---
 .claude/
+# Agent-internal cross-session memory files (never part of the public repo)
+feedback_*.md
 
 # --- Explicitly tracked ---
 # data/raw/ is the provenance corpus and MUST be tracked (LFS for PDFs).
