@@ -69,7 +69,20 @@ DEFAULT_TEMPERATURE = 0.3
 DEFAULT_MAX_TOKENS = 300
 
 HF_MODEL_URL = "https://huggingface.co/meftun/gpt-oss-20b-uav-doctrine"
-GITHUB_REPO_URL = "https://github.com/mftnakrsu/finetuneSLM"
+GITHUB_REPO_URL = "https://github.com/mftnakrsu/uav-doctrine-slm"
+
+# Force light mode. Gradio decides dark/light client-side (it honours the OS
+# preference), so the only robust server-side override is the `?__theme=light`
+# query param. This one-shot redirect sets it on load and then no-ops.
+FORCE_LIGHT_JS = """
+() => {
+  const url = new URL(window.location);
+  if (url.searchParams.get('__theme') !== 'light') {
+    url.searchParams.set('__theme', 'light');
+    window.location.href = url.href;
+  }
+}
+"""
 
 # Trace shown to users is capped so a runaway baseline CoT can't flood the panel.
 _REASONING_PREVIEW_CHARS = 1500
@@ -511,6 +524,7 @@ if __name__ == "__main__":
         server_name="0.0.0.0",
         server_port=7860,
         theme=gr.themes.Soft(),
+        js=FORCE_LIGHT_JS,  # force light mode (white background, not dark)
         ssr_mode=False,
         show_error=True,
         share=False,
