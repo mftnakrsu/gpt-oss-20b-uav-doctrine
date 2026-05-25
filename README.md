@@ -14,6 +14,15 @@ corpus using the **Tinker API**, in two phases:
 Shared data pipeline and shared eval harness with pluggable graders sit
 under `src/finetune_slm/`.
 
+## Try the model
+
+- **🤗 Model card / LoRA adapter:** https://huggingface.co/meftun/gpt-oss-20b-uav-doctrine
+- **🚀 Live demo (Gradio on HF Spaces):** https://huggingface.co/spaces/meftun/gpt-oss-20b-uav-doctrine-demo
+
+The demo serves the Phase A **v4** adapter (and the un-adapted baseline, side by
+side) through the Tinker API — nothing runs on the Space's own hardware. Research
+artifact: verify every output against the source doctrine; not for operational use.
+
 ## Stack
 
 - **Base model:** OpenAI GPT-OSS-20B (MoE, future-safe — not on Tinker's
