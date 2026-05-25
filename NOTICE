@@ -47,9 +47,10 @@ original and expansion — are recorded in each `data/raw/<source_id>/manifest.j
 Expansion sources are predominantly **US Government works** (e.g. CRS, DTIC, NPS —
 US public domain). They also include **publicly-released analyses from
 organizations such as ICRC, CNAS, and RUSI that retain their own copyright**;
-these are included for non-commercial academic research. For the redistribution
-terms of any specific expansion document, consult its `manifest.json` and the
-original publisher.
+**the PDFs for these copyrighted analyses are NOT redistributed in this
+repository** — only their `manifest.json` (source URL, license, SHA-256) is kept,
+so they can be re-downloaded from the original publisher. For the redistribution
+terms of any specific document, consult its `manifest.json` and the publisher.
 
 ---
 

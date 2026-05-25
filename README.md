@@ -141,7 +141,8 @@ The final splits (`data/processed/qa/`) are committed, so you can skip steps 4�
 ```
 .
 ├── data/
-│   ├── raw/                # 58 public-domain doctrine PDFs (LFS) + per-source manifest.json
+│   ├── raw/                # openly-licensed doctrine PDFs (LFS) + manifest.json for all 58 sources
+│   │                       #   (8 copyrighted analyses are manifest-only, not redistributed)
 │   └── processed/qa/       # final train/val/test/held_out splits (18,730 pairs, committed)
 ├── src/
 │   ├── ingest/             # corpus download / provenance pipeline
@@ -183,7 +184,7 @@ Four observations from the build that are more useful than the headline number (
 ## Reproducibility
 
 - All source documents are publicly available (US gov/mil, NATO, ICRC, RUSI, CNAS, CRS, NPS, civil-aviation authorities); the full list and provenance are in [`docs/journal/02-data-expansion.md`](docs/journal/02-data-expansion.md) and the per-source `manifest.json` files under `data/raw/`.
-- The 58 PDFs are Git-LFS-tracked in this repo; the final train/val/test/held-out splits are committed under `data/processed/qa/`.
+- The openly-licensed corpus PDFs (US Gov public-domain, NATO/UK/EASA/ICAO open licenses) are Git-LFS-tracked in this repo. **8 copyrighted third-party analyses (ICRC, CNAS, RUSI, LIIA) are not redistributed here** — their `manifest.json` (source URL + license + SHA-256) is kept so you can re-download them from the publisher. The final train/val/test/held-out splits are committed under `data/processed/qa/`.
 - Every build step has a corresponding entry in [`docs/journal/`](docs/journal/) (01–14).
 - The LoRA adapter is published on [HuggingFace](https://huggingface.co/meftun/gpt-oss-20b-uav-doctrine).
 
