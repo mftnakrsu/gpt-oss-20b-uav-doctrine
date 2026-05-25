@@ -1,0 +1,10 @@
+# Runtime dependencies for the HF Spaces app (app.py).
+# Pins mirror the versions resolved by `uv` in the project lockfile.
+gradio==6.14.0
+tinker>=0.22.0
+tinker-cookbook>=0.4.1
+# Needed by tinker_cookbook.tokenizer_utils.get_tokenizer for the
+# openai/gpt-oss-20b tokenizer + the gpt_oss_no_sysprompt renderer.
+transformers>=4.57.6
+tiktoken>=0.13.0
+python-dotenv>=1.2.2
