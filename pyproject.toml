@@ -33,6 +33,7 @@ clean = [
     "marker-pdf>=0.2",
 ]
 dev = [
+    "matplotlib>=3.10.9",
     "pytest>=9",
 ]
 

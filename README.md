@@ -36,31 +36,28 @@ It is evaluated rigorously: a GPT-5.4 pair-wise judge scored v4 against the un-a
 
 All numbers trace to the build journals in [`docs/journal/`](docs/journal/).
 
+![Win rate: v4 vs baseline, overall and per question type](docs/images/win_rates.png)
+
+![Mean judge scores by axis (v4 vs baseline)](docs/images/score_axes.png)
+
+The single largest behavioral shift is answer length: v4 answers directly (~49 tokens), while the un-adapted base model spends its whole budget on hidden reasoning and usually emits no final answer (~297 tokens).
+
+![Mean answer length: v4 ~49 vs baseline ~297 tokens](docs/images/output_length.png)
+
+![Validation NLL over Phase A training](docs/images/nll_curve.png)
+
 ## Architecture
 
-```
- data/raw/  58 public-domain doctrine PDFs (+ per-source manifest.json, LFS-tracked)
-     │
-     ▼  scripts/prepare_corpus.py
- clean  ── header/footer strip · hyphenation repair · ligature normalize  (95.2% retained)
-     │
-     ▼  chunk @ 1,200 tok / 150 overlap (gpt-oss-20b tokenizer)
- 4,051 chunks
-     │
-     ▼  scripts/filter_chunks.py — multi-signal quality filter (TOC/bib/low-content)
- 3,747 passing chunks (92.5%)
-     │
-     ▼  scripts/full_qa.py — GPT-5.4 generates 5 grounded Q&A per chunk
- 18,730 Q&A pairs
-     │
-     ▼  scripts/build_splits.py — ChatML render + chunk-level group-aware split (85/5/10 + held-out sources)
- train 15,905 · val 935 · test 1,875 · held_out 15
-     │
-     ▼  scripts/train_phase_a.py — Tinker LoRA SFT on gpt-oss-20b  (v1..v4 ablation; v4 wins)
- v4 adapter  ──►  HuggingFace  (meftun/gpt-oss-20b-uav-doctrine)
-     │
-     ▼  scripts/eval_phase_a.py + position_bias_check.py — GPT-5.4 pair-wise judge
- 82.6% win rate  ──►  Gradio demo  (HF Spaces, served via Tinker)
+```mermaid
+flowchart TD
+    A["data/raw/ — 58 public doctrine PDFs<br/>(+ per-source manifest.json, LFS)"] -->|prepare_corpus.py| B["clean + chunk<br/>1,200 tok / 150 overlap · 95.2% retained"]
+    B --> C["4,051 chunks"]
+    C -->|filter_chunks.py| D["quality filter<br/>3,747 pass (92.5%)"]
+    D -->|"full_qa.py · GPT-5.4"| E["18,730 Q&A pairs"]
+    E -->|build_splits.py| F["chunk-level split<br/>train 15,905 · val 935 · test 1,875 · held-out 15"]
+    F -->|"train_phase_a.py · Tinker LoRA"| G["v4 adapter<br/>r=16 · α=32 · lr 2e-4 · 2 epochs"]
+    G --> H["🤗 HuggingFace model + Space demo"]
+    G -->|"eval_phase_a.py · GPT-5.4 judge"| I["82.6% win rate<br/>(CI 80.9–84.4%)"]
 ```
 
 ## Quickstart — use the model
@@ -202,6 +199,8 @@ Actual journal figures. Azure (GPT-5.4) costs are real placeholder-rate estimate
 | Position-bias re-judge | $0.90 | [10](docs/journal/10-position-bias-control.md) |
 | **Total (single training run)** | **~$55** | |
 | **Total (incl. 4-variant ablation)** | **~$62** | |
+
+![Cost by phase](docs/images/cost.png)
 
 ## Documentation
 

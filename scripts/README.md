@@ -26,6 +26,7 @@ Each step consumes the previous step's outputs. (The committed `data/processed/q
 - **preflight_azure.py** — Connection tests for the Azure GPT-5.4 + embedding endpoints.
 - **verify_hf_adapter.py** — Downloads the HF-published adapter and structure-validates it.
 - **write_journal_07.py … write_journal_10.py** — Regenerate journals 07–10 from the run/eval artifacts in `outputs/`.
+- **make_charts.py** — Regenerate the README result charts (`docs/images/*.png`) from the journal-verified numbers.
 
 ## Environment
 
